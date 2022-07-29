@@ -76,7 +76,7 @@ function displaySlogans() {
 
   for (let slogan of slogans) {
     const sloganEl = document.createElement('p');
-    sloganEl.textContent = slogan;
+    sloganEl.textContent = `"${slogan}"`;
     sloganEl.classList.add('slogan');
     slogansEl.append(sloganEl);
   }
