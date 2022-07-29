@@ -17,73 +17,77 @@
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h2>City Builder App</h2>
     </header>
 
     <main>
-        <section>
-            <div> Futuristic cities:
-                <select class="dropdown" id="future-dropdown">
-                    <option value=""></option>
-                    <option value="future-city-1">Desert wasteland</option>
-                    <option value="future-city-2">Floating utopia</option>
-                    <option value="future-city-3">Earth from the Moon</option>
-                    <option value="future-city-4">Hewn from rock</option>
-                </select>
-            </div>
+        <h1>Build your city!</h1>
+        <section id="dropdown-container">
+
+            <section>
+                <div id="future-cities" class="banner">Futuristic cities:
+                    <select class="dropdown" id="future-dropdown">
+                        <option value=""></option>
+                        <option value="future-city-1">Desert wasteland</option>
+                        <option value="future-city-2">Floating utopia</option>
+                        <option value="future-city-3">Earth from the Moon</option>
+                        <option value="future-city-4">Hewn from rock</option>
+                    </select>
+                </div>
+            </section>
+            <section>
+                <div id="modern-cities" class="banner">Modern cities:
+                    <select class="dropdown" id="modern-dropdown">
+                        <option value=""></option>
+                        <option value="modern-city-1">Ancient origins</option>
+                        <option value="modern-city-2">Financial center</option>
+                        <option value="modern-city-3">Modern metropolis</option>
+                        <option value="modern-city-4">Sprawling city</option>
+                    </select>
+                </div>
+            </section>
+            <section>
+                <div id="historic-cities" class="banner">Historic cities:
+                    <select class="dropdown" id="historic-dropdown">
+                        <option value=""></option>
+                        <option value="historic-city-1">Colorful canals</option>
+                        <option value="historic-city-2">Medieval market town</option>
+                        <option value="historic-city-3">Rural destination</option>
+                        <option value="historic-city-4">High-walled castle</option>
+                    </select>
+                </div>
+            </section>
         </section>
-        <section>
-            <div>Modern cities:
-            <select class="dropdown" id="modern-dropdown">
-                <option value=""></option>
-                <option value="modern-city-1">Ancient origins</option>
-                <option value="modern-city-2">Financial center</option>
-                <option value="modern-city-3">Modern metropolis</option>
-                <option value="modern-city-4">Sprawling city</option>
-            </select>
-            </div>
-        </section>
-        <section>
-            <div>Historic cities:
-            <select class="dropdown" id="historic-dropdown">
-                <option value=""></option>
-                <option value="historic-city-1">Colorful canals</option>
-                <option value="historic-city-2">Medieval market town</option>
-                <option value="historic-city-3">Rural destination</option>
-                <option value="historic-city-4">High-walled castle</option>
-            </select>
-            </div>
-        </section>
-        <section>
-            <p id="times-changed"></p>
-        </section>
-        <section>
-            <div>
+        <section id="images-section">
+            <div id="future">
                 <img id="future-img">
             </div>
-            <div>
+            <div id="modern">
                 <img id="modern-img">
             </div>
-            <div>
+            <div id="historic">
                 <img id="historic-img">
             </div>
         </section>
-        <section>
+        <section id="user-input">
+            <div id="slogan">
+                <input id="slogan-input" type="text" placeholder="Enter a new slogan">
+                <button id="slogan-button">Add slogan</button>
 
-            <input id="city-input" type="text" placeholder="Name your city">
-            <button id="city-button">Submit</button>
-            <h3 id="city-display"></h3>
-            <div id="city-name"></div>
-
-
-            <input id="slogan-input" type="text" placeholder="Enter a new slogan">
-            <button id="slogan-button">Add slogan</button>
-
-            <h3>City slogans:</h3>
-            <div id="slogans"></div>
+                <h3>City slogans:</h3>
+                <div id="slogans"></div>
+            </div>
+            <div id="change">
+                <p id="times-changed"></p>
+            </div>
+            <div id="city">
+                <input id="city-input" type="text" placeholder="Name your city">
+                <button id="city-button">Submit</button>
+                <h3 id="city-display"></h3>
+                <div id="city-name"></div>
+            </div>
         </section>
-
+        </section>
     </main>
 
     <footer>&copy;2022 Software Developer</footer>
